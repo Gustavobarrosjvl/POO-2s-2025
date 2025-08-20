@@ -2,14 +2,14 @@ package calculadora;
 
 public class Calculadora{
 
-    public Double numeroA;
-    public Double numeroB;
+    public double numeroA;
+    public double numeroB;
 
     public Calculadora(){
     }
 
     public void somar(){
-        Double resultadoSoma = this.numeroA + this.numeroB;
-        System.out.println(this.numeroA + " + " + this.numeroB + " + " + resultadoSoma);
+        double resultadoSoma = this.numeroA + this.numeroB;
+        System.out.println(this.numeroA + " + " + this.numeroB + " = " + resultadoSoma);
     }
 }
