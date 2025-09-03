@@ -1,8 +1,12 @@
 public class Radar{
-    public Integer limiteVelocidade;
-    public String modelo;
-    public String localizacao;
-    public Integer velocidadeAvaliada;
+    private Integer limiteVelocidade;
+    private String localizacao;
+    private Integer velocidadeAvaliada;
+
+    public Radar(Integer limiteVelocidade, String localizacao){
+        this.limiteVelocidade = limiteVelocidade;
+        this.localizacao = localizacao;
+    }
 
     public void emitirNotificacao(String placa, Integer velocidadeAvaliada){
         System.out.println("Limite de Velocidade: "+ this.limiteVelocidade);
@@ -11,10 +15,8 @@ public class Radar{
     }
 
     public void avaliarVelocidade(Carro c){
-        if(c.velocidade > this.limiteVelocidade){
-           emitirNotificacao(c.placa, c.velocidade);
+        if (c.getVelocidade() > this.limiteVelocidade) {
+            emitirNotificacao(c.getPlaca(), c.getVelocidade());
         }
     }
 }
-
-//import java.io.PrintStream;
