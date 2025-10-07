@@ -17,4 +17,4 @@ public class Main{
         IOS.ExecutarPrograma(P2, 2);
         IOS.ExecutarPrograma(P3, 3);
     }
-} 
+}
