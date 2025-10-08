@@ -5,6 +5,15 @@ public class Livro extends Material {
         super(titulo, anoPublicacao);
         this.autor = autor;
     }
+
+    public String getAutor() {
+        return this.autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+    @Override
     public void descricao(){
         System.out.println("Titulo: " + getTitulo());
         System.out.println("Ano de Publicacao: " + getAnoPublicacao());

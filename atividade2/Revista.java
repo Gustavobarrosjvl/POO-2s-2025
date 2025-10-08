@@ -5,6 +5,15 @@ public class Revista extends Material {
         super(titulo, anoPublicacao);
         this.edicao = edicao;
     }
+
+    public Integer getEdicao() {
+        return this.edicao;
+    }
+
+    public void setEdicao(Integer edicao) {
+        this.edicao = edicao;
+    }
+    @Override
     public void descricao(){
         System.out.println("Titulo: " + getTitulo());
         System.out.println("Ano de Publicacao: " + getAnoPublicacao());

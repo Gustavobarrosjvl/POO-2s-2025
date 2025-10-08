@@ -5,9 +5,19 @@ public class Usuario extends Pessoa{
         super(nome, email);
         this.matricula = matricula;
     }
+
+    public Integer getMatricula() {
+        return this.matricula;
+    }
+
+    public void setMatricula(Integer matricula) {
+        this.matricula = matricula;
+    }
+
+    @Override
     public void exibirInfo(){
-        System.out.println("Nome: " + getNome());
-        System.out.println("email: " + getEmail());
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("email: " + this.getEmail());
         System.out.println("Matricula: " + this.matricula);
     }
 }
