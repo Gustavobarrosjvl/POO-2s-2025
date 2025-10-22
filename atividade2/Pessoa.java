@@ -1,4 +1,4 @@
-public abstract class Pessoa {
+public abstract class Pessoa implements TomadorEmprestimo{
     private String nome;
     private String email;
 
@@ -24,5 +24,4 @@ public abstract class Pessoa {
     public void setEmail(String email) {
         this.email = email;
     }
-
 }

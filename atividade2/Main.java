@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.print.attribute.standard.JobOriginatingUserName;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -11,6 +13,11 @@ public class Main {
 
         int opcao;
 
+        Instituicao UCB = new Instituicao("UCB", "123456", "Brasilia-DF");
+        Colecao c1 = new Colecao("Pedro", 10);
+        Emprestimo e1 = new Emprestimo(UCB, c1, "20/10/2025", "21/10/2025");
+        emprestimos.add(e1);
+        
         do {
             System.out.println("===== SISTEMA DE BIBLIOTECA =====");
             System.out.println("1 - Cadastrar Usuário");
